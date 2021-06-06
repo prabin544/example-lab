@@ -32,7 +32,9 @@ print(
     Unicorn Tears
     '''
     )
+print('**************************************')
 print('What would you like to order?')
+print('**************************************')
 order=input('>')
 x = 0
 while order != 'quit':
