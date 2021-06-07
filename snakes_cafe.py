@@ -36,8 +36,14 @@ print('**************************************')
 print('What would you like to order?')
 print('**************************************')
 order=input('>')
-x = 0
+
+summary = {}
+
 while order != 'quit':
-    x = x + 1 
-    print(f'** {x} order of {order} have been added to your meal **')
-    order=input('>')    
+    x = 1
+    if order not in summary:
+        summary[order] = 0
+    summary[order] += 1
+    print(f'** {summary[order]} order of {order} have been added to your meal **')
+    order=input('>') 
+ 
